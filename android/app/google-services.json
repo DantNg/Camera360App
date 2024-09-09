@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "886847664297",
+    "firebase_url": "https://cameraapp-cea50-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "cameraapp-cea50",
+    "storage_bucket": "cameraapp-cea50.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886847664297:android:24160668d4012dce5879b8",
+        "android_client_info": {
+          "package_name": "com.example.login_auth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbcZdTNG9znAKtBNi1-JGHyg1X-BgzqxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886847664297:android:55009e2adc47cf235879b8",
+        "android_client_info": {
+          "package_name": "com.example.login_form"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbcZdTNG9znAKtBNi1-JGHyg1X-BgzqxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886847664297:android:7716e5b402ad49975879b8",
+        "android_client_info": {
+          "package_name": "com.mycompany.camer360"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbcZdTNG9znAKtBNi1-JGHyg1X-BgzqxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
