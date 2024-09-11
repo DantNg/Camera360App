@@ -1,8 +1,5 @@
-import 'dart:convert';
 import 'dart:typed_data';
-import 'package:crypto/crypto.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 import 'package:panorama_viewer/panorama_viewer.dart';
 import 'package:http_auth/http_auth.dart';
 class PhotoScreen extends StatefulWidget {

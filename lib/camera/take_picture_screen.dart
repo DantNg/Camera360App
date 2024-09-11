@@ -4,7 +4,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:theta_client_flutter/theta_client_flutter.dart';
 import 'package:panorama_viewer/panorama_viewer.dart'; // Import Panorama Viewer
-import 'package:panorama_viewer/panorama_viewer.dart';
 
 class TakePictureScreen extends StatefulWidget {
   final String username;

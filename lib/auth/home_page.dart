@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:login_form/auth/login_page.dart';
-import 'package:login_form/theme/constants.dart';
-import 'package:login_form/camera/my_camera.dart'; // Import the MyCamera page
-import 'package:login_form/camera/capture_library/library_screen.dart';
+import 'login_page.dart';
+import '../theme/constants.dart';
+import '../camera/my_camera.dart'; // Import the MyCamera page
+import '../camera/capture_library/library_screen.dart';
+import '../stream/stream_player_screen.dart';
 class HomePage extends StatelessWidget {
   final User user;
 
@@ -77,6 +78,14 @@ class HomePage extends StatelessWidget {
                   );
                 },
                 child: const Text('Open Camera Control'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const StreamPlayer()),
+                  );
+                },
+                child: const Text('Open Stream Camera'),
               ),
               ElevatedButton(
                 onPressed: () {

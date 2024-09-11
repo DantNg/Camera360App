@@ -4,12 +4,11 @@ import 'package:crypto/crypto.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'video_screen.dart';
-import 'photo_screen.dart';
 import 'package:path_provider/path_provider.dart';
 import 'dart:io';
 import 'panorama/panorama_photo_screen.dart';
 import 'package:http_auth/http_auth.dart';
-
+import 'dart:developer' as developer;
 // Định nghĩa lớp FileInfo để xử lý dữ liệu JSON từ response
 class FileInfo {
   final String name;
@@ -69,6 +68,7 @@ class _FileListScreen extends State<FileListScreen> {
   late final String _password;
   @override
   void initState() {
+    developer.log('log me', name: 'my.app.category');
     super.initState();
     // Initialize the variables with the values passed from the parent class
     _endpoint = widget.endpoint;

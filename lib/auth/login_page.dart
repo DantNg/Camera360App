@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:login_form/auth/signup_page.dart';
-import 'package:login_form/auth/forgot_password_page.dart';
-import 'package:login_form/auth/home_page.dart';
-import 'package:login_form/theme/constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'signup_page.dart';
+import 'forgot_password_page.dart';
+import 'home_page.dart';
+import '../theme/constants.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

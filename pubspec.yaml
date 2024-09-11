@@ -1,4 +1,4 @@
-name: login_form
+name: camera360
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -46,7 +46,8 @@ dependencies:
   http_auth: ^1.0.4
   path_provider: ^2.1.4
   image_picker: ^1.1.2
-  permission_handler: ^11.3.1
+  video_360: ^0.0.9
+  vr_player: ^0.2.2
 
 dev_dependencies:
   flutter_test:

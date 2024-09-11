@@ -4,11 +4,11 @@ import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:theta_client_flutter/theta_client_flutter.dart';
 import 'package:theta_client_flutter/digest_auth.dart';
-import 'package:login_form/camera/capture_video_screen.dart';
-import 'package:login_form/camera/file_list_screen.dart';
-import 'package:login_form/camera/message_box.dart';
-import 'package:login_form/camera/take_picture_screen.dart';
-import 'package:login_form/theme/constants.dart'; // Import your custom theme
+import '/camera/capture_video_screen.dart';
+import '/camera/file_list_screen.dart';
+import '/camera/message_box.dart';
+import '/camera/take_picture_screen.dart';
+import '/theme/constants.dart'; // Import your custom theme
 
 class MyCamera extends StatefulWidget {
   const MyCamera({super.key});

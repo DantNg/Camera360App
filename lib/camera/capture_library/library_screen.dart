@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:login_form/camera/panorama/panorama_photo_screen.dart';
 import '../panorama/panorama_photo_screen.dart';
 import 'package:image_picker/image_picker.dart';
-
+import '../../theme/constants.dart';
 class LibraryScreen extends StatefulWidget {
   const LibraryScreen({super.key});
 
@@ -34,7 +33,12 @@ class _LibraryScreenState extends State<LibraryScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Select an Image'),
+        title: const Text('Select Image'),
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            gradient: appGradient,
+          ),
+        ),
       ),
       body: Center(
         child: ElevatedButton(
