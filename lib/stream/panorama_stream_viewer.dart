@@ -22,6 +22,12 @@ class _PanoramaStreamViewerState extends State<PanoramaStreamViewer> {
   }
 
   @override
+  void dispose() {
+    controller?.dispose(); // Hủy controller nếu nó tồn tại
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
@@ -46,10 +52,13 @@ class _PanoramaStreamViewerState extends State<PanoramaStreamViewer> {
                 onVideo360ViewCreated: _onVideo360ViewCreated,
                 url: widget.streamUrl,
                 onPlayInfo: (Video360PlayInfo info) {
-                  setState(() {
-                    durationText = _formatDuration(info.duration);
-                    totalText = _formatDuration(info.total);
-                  });
+                  if (mounted) {
+                    // Kiểm tra widget có được gắn vào cây không trước khi gọi setState
+                    setState(() {
+                      durationText = _formatDuration(info.duration);
+                      totalText = _formatDuration(info.total);
+                    });
+                  }
                 },
               ),
             ),

@@ -59,15 +59,10 @@ class _NormalStreamViewerState extends State<NormalStreamViewer> {
               });
             },
             onTap: () {
-              if (_showControls != false) {
-                _showControls = false;
-              } else {
-                _showControls = true;
-              }
               // // Ẩn hoặc hiện điều khiển khi nhấn vào màn hình
-              // setState(() {
-              //   _showControls = !_showControls;
-              // });
+              setState(() {
+                _showControls = !_showControls;
+              });
             },
             child: Stack(
               children: [
