@@ -9,7 +9,7 @@ import '/camera/file_list_screen.dart';
 import '/camera/message_box.dart';
 import '/camera/take_picture_screen.dart';
 import '/theme/constants.dart'; // Import your custom theme
-
+import 'package:camera360/camera/panorama/panorama_video.dart';
 class MyCamera extends StatefulWidget {
   const MyCamera({super.key});
 
@@ -323,11 +323,9 @@ class Home extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               ElevatedButton(
-                onPressed: !isInitialized
-                    ? null
-                    : () {
+                onPressed:  () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (_) => TakePictureScreen(
+                            builder: (_) => Video360FromAssets(
                               username: username,
                               password: password,
                             )));
